@@ -5,21 +5,21 @@
 class CacheBuster < Formula
   desc "Developer cache manager with configurable size limits"
   homepage "https://github.com/Automaat/cache-buster"
-  version "0.7.0"
+  version "0.8.0"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/Automaat/cache-buster/releases/download/v0.7.0/cache-buster_0.7.0_darwin_amd64.tar.gz"
-      sha256 "8982b6d5ee4e4232333e375c5bdd5bfd8abaaccf69e953865fb7a8c6bd58fb01"
+      url "https://github.com/Automaat/cache-buster/releases/download/v0.8.0/cache-buster_0.8.0_darwin_amd64.tar.gz"
+      sha256 "05d6e0e47ac06317942f897d974904a113d31e168bf3338420f7af5005e00644"
 
       define_method(:install) do
         bin.install "cache-buster"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/Automaat/cache-buster/releases/download/v0.7.0/cache-buster_0.7.0_darwin_arm64.tar.gz"
-      sha256 "ea88a6cfa4e028cee27771d0f03f5761214e222f54d13bf84b5361c766dc7c13"
+      url "https://github.com/Automaat/cache-buster/releases/download/v0.8.0/cache-buster_0.8.0_darwin_arm64.tar.gz"
+      sha256 "76c34a8fe1a551875c8a04fbd8a7496966705bbe8af0d30e4a99eddcebd998e4"
 
       define_method(:install) do
         bin.install "cache-buster"
@@ -29,15 +29,15 @@ class CacheBuster < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/Automaat/cache-buster/releases/download/v0.7.0/cache-buster_0.7.0_linux_amd64.tar.gz"
-      sha256 "4f0ac8b769e3236f45060d71a75117659920dc4b89cc6f30f62697c8c5f47750"
+      url "https://github.com/Automaat/cache-buster/releases/download/v0.8.0/cache-buster_0.8.0_linux_amd64.tar.gz"
+      sha256 "1e444f1f88dbd531876d2cd43dd5aa77563926bd35fc107fbc5503a75057a150"
       define_method(:install) do
         bin.install "cache-buster"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/Automaat/cache-buster/releases/download/v0.7.0/cache-buster_0.7.0_linux_arm64.tar.gz"
-      sha256 "a1d3e704b651e047f9f49c02860d8cb0ac768369c419458918c97b01b25626c3"
+      url "https://github.com/Automaat/cache-buster/releases/download/v0.8.0/cache-buster_0.8.0_linux_arm64.tar.gz"
+      sha256 "7be94a362b927fbab30de117184fdf8ee83eb441b404dc5b4ce13ac89638fa04"
       define_method(:install) do
         bin.install "cache-buster"
       end
