@@ -24,5 +24,7 @@ cask "zakwas" do
     skip "Auto-generated on release."
   end
 
+  depends_on :macos
+
   binary "zakwas"
 end
