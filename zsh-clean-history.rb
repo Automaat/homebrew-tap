@@ -5,7 +5,6 @@
 class ZshCleanHistory < Formula
   desc "Smart zsh history cleanup: removes typos and failed commands"
   homepage "https://github.com/Automaat/zsh-clean-history"
-  version "0.2.1"
   license "MIT"
 
   on_macos do
