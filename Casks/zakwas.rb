@@ -6,15 +6,15 @@ cask "zakwas" do
     run "/usr/bin/xattr", args: ["-dr", "com.apple.quarantine", "zakwas"], chdir: ".", writable_paths: ["zakwas"], must_succeed: false
   end
 
-  version "0.14.0"
+  version "0.15.0"
 
   on_macos do
     on_arm do
-      sha256 "2d01643ab092a72b1cb086de8470c3eed615011cc47f43c7eb1bd5ee24c260b5"
+      sha256 "2c52e39580f157993d1609bcb014704d044503112bf49eb9a42e12db8cbc8b5b"
       url "https://github.com/Automaat/zakwas/releases/download/v#{version}/zakwas_#{version}_darwin_arm64.tar.gz"
     end
     on_intel do
-      sha256 "bfe2ec5c5334d7eb23aac8c1b0611ee53cb1d5f0aacd55340945cbe5da16325c"
+      sha256 "f6218d36b42e7485957a423cff653cfd772d2300a4025f1b4220c36c33d95bf8"
       url "https://github.com/Automaat/zakwas/releases/download/v#{version}/zakwas_#{version}_darwin_amd64.tar.gz"
     end
   end
